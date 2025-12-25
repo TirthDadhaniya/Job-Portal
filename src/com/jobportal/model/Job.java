@@ -7,11 +7,19 @@ public class Job {
     private String description;
     private String location;
 
-    public Job(int jobId, String title, String description, String location){
+    public Job(int jobId, String title, String description, String location) {
         this.jobId = jobId;
         this.title = title;
         this.description = description;
         this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Job posted successfully\n" +
+                "Title: " + jobId +
+                "\nDescription:" + description +
+                "\nLocation: " + location;
     }
 
     public int getJobId() {

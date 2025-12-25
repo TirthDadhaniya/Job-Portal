@@ -24,5 +24,9 @@ public class Main {
         jobService.applyForJob(app);
 
         System.out.println("Application Status: " + app.getStatus());
+
+        jobService.viewAllJobs();
+        jobService.viewAllApplications();
+
     }
 }

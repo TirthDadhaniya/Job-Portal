@@ -7,11 +7,19 @@ public class Application {
     private int jobId;
     private String status;
 
-    public Application(int applicationId, int candidateId, int jobId, String status){
+    public Application(int applicationId, int candidateId, int jobId, String status) {
         this.applicationId = applicationId;
         this.candidateId = candidateId;
         this.jobId = jobId;
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Application submitted:\n" +
+                "\nCandidate ID: " + candidateId +
+                "\nJob ID: " + jobId +
+                "\nApplication Status: " + status;
     }
 
     public int getApplicationId() {
